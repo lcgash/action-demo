@@ -1,0 +1,10 @@
+name: 'Checkout'
+description: 'Checkout a Git repository at a particular version'
+inputs:
+  hello:
+    default: "github action"
+
+runs:
+  using: node24
+  main: dist/index.js
+  post: dist/index.js
